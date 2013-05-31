@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('MainCtrl', function ($scope, $timeout, $log, user) {
+	.controller('MainCtrl', function ($scope, $timeout, $log) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
@@ -28,8 +28,7 @@ angular.module('soundmapApp')
 				{
 					latitude : 47.15143535829049,
 					longitude : 27.59490966796875,
-			//		url : 'https://api.soundcloud.com/tracks/93249728'
-					url : 'https://api.soundcloud.com/tracks/94818362'
+					url : 'https://api.soundcloud.com/tracks/93249728'
 				}
 			],
 			
@@ -81,16 +80,22 @@ angular.module('soundmapApp')
 			}
 		};
 
-		angular.extend($scope, {
-			map : map,
-			location : location,
-			addSound : function(){
-				user.login(function(){
-					console.log('logged in');
-				});
-			},
-			user : user
-		});
+		$scope.map = map;
+		$scope.location = location;
 
 		window.$scope = $scope;
+
+
+
+
+
+
+				// force cross-site scripting 
+		jQuery.support.cors = true;
+/*
+		var widgetIframe = document.getElementById('sc-widget'),
+		    widget       = SC.Widget(widgetIframe);
+
+		window.widget = widget;*/
+
 });

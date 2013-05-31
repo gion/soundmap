@@ -1,0 +1,19 @@
+.sc-widget, sc-widget, [data-sc-widget]{
+	iframe{
+		&.uninitialized{
+			height: 0;
+		}
+
+		-webkit-transition: height 1s ease-in 0;
+		-moz-transition: height 1s ease-in 0;
+		transition: height 1s ease-in 0;
+	}
+}
+
+header div {
+	text-align: right;
+}
+
+.hero-unit{
+	padding-top: 30px;
+}

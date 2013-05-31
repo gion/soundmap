@@ -1,1 +1,19 @@
 @import "compass_twitter_bootstrap";
+/* .gmnoprint for "x" exit from street view*/
+/* fix image pegman google*/
+img{
+	max-width: none;
+}
+
+.login-btn{
+	display: block;
+	width : 189px;
+	height : 21px;
+	background-repeat: no-repeat;
+	background-image : url(http://connect.soundcloud.com/2/btn-connect-sc-s.png);
+}
+
+.logged-in .login-btn{
+	width : 109px;
+	background-image : url(http://connect.soundcloud.com/2/btn-disconnect-s.png);
+}

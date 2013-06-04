@@ -20,9 +20,12 @@ angular.module('soundmapApp')
 
 			},
 			getTracks : function(callback){
-				SC.get('/tracks', function(){
-					callback && callback.apply(this, arguments);
-				});
+				if(api.loggedIn)
+					SC.get('/users/'+ api.info.id +'/tracks', function(){
+						callback && callback.apply(this, arguments);
+					});
+				else
+					callback && callback(null);
 			},
 			info : null,
 			loggedIn : false

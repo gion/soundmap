@@ -84,13 +84,21 @@ angular.module('soundmapApp')
 		angular.extend($scope, {
 			map : map,
 			location : location,
-			addSound : function(){
+			login : function(){
 				user.login(function(){
 					console.log('logged in');
+					$scope.$apply();
 				});
+			},
+			logout : function(){
+				user.logout.apply(user, arguments);
+			},
+			logManage : function(){
+				return user.loggedIn?$scope.logout():$scope.login();
 			},
 			user : user
 		});
 
-		window.$scope = $scope;
+		window.scope = $scope;
+		
 });

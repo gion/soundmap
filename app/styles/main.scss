@@ -18,6 +18,12 @@ img{
 	font-size: 12px;
 }
 
+.add-link{
+	display: none;
+	position : relative;
+	top : -6px;
+}
+
 .logged-in{
 
 	.login-btn{
@@ -28,4 +34,80 @@ img{
 	.login-text{
 		display: none;
 	}
+
+	.add-link{
+		display: inline-block
+	}
+}
+
+
+.roll {
+    overflow: hidden;
+    vertical-align: top;
+
+    -webkit-perspective: 300px;
+       -moz-perspective: 300px;
+        -ms-perspective: 300px;
+            perspective: 300px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+}
+.roll:hover {
+    background: none;
+    text-shadow: none;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+    pointer-events: none;
+
+    -webkit-transition: all 600ms ease;
+       -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+            transition: all 400ms ease;
+    
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+.roll:hover span {
+   // background: rgba(190,190,20,.9);
+
+    -webkit-transform: translate3d( 0px, 0px, -45px ) rotateX( 95deg );
+       -moz-transform: translate3d( 0px, 0px, -45px ) rotateX( 95deg );
+        -ms-transform: translate3d( 0px, 0px, -45px ) rotateX( 95deg );
+            transform: translate3d( 0px, 0px, -45px ) rotateX( 95deg );
+}
+.roll span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+    white-space: nowrap;
+
+    color: #f60;
+    background: #eeeeee; 
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+        -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+            transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 }

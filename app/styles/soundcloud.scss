@@ -17,3 +17,48 @@ header div {
 .hero-unit{
 	padding-top: 30px;
 }
+
+.expand-input{
+
+	-webkit-transition:all 250ms ease-in !important;  
+   -moz-transition:all 250ms ease-in !important;  
+   -o-transition:all 250ms ease-in !important;  
+   transition:all 250ms ease-in !important;  
+
+	width : 200px;
+	&:focus{
+		width : 98% !important;
+	}
+}
+textarea.expand-input{
+	height : 100px;
+	width: 400px !important;
+	&:focus{
+		width : 98% !important;
+	}
+}
+
+
+ol ul{
+	max-height: 400px;
+	overflow: auto;
+	li{
+		height: 30px;
+		line-height: 30px;
+
+		&.selected{
+			a > span{
+				&:after{					
+					color: red !important;
+				};
+				color: red !important;
+			}
+		}
+
+		a{
+			position: relative;
+			top: -17px;
+		}
+	}
+}
+

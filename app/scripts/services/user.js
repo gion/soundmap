@@ -21,7 +21,8 @@ angular.module('soundmapApp')
 			},
 			getTracks : function(callback){
 				if(api.loggedIn)
-					SC.get('/users/'+ api.info.id +'/tracks', function(){
+					SC.get('/users/'+ api.info.id +'/tracks', function(tracks){
+						api.trackList = tracks;
 						callback && callback.apply(this, arguments);
 					});
 				else

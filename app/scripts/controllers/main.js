@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('MainCtrl', function ($scope, $timeout, $log, user) {
+	.controller('MainCtrl', function ($rootScope, $scope, $timeout, $log, user, $routeParams) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
@@ -25,11 +25,20 @@ angular.module('soundmapApp')
 			
 			/** list of markers to put in the map */
 			markersProperty: [
-				{
+/*				{
 					latitude : 47.15143535829049,
 					longitude : 27.59490966796875,
 			//		url : 'https://api.soundcloud.com/tracks/93249728'
 					url : 'https://api.soundcloud.com/tracks/94818362'
+				},*/
+				{
+					"title":"10 - Fly me to the moon - The Gardeners live@RALET",
+					"latitude":47.15594427065246,
+					"longitude":27.579835653305054,
+					"permalink":"http://soundcloud.com/bogdan-gradinariu/10-fly-me-to-the-moon-the",
+					"url":"https://api.soundcloud.com/tracks/94456020",
+					"description":"bogdan & radu gradinariu (known as the gardeners) performing at  ralet (http://www.ralet.ro/) restaurant and recorded by vladimir ivanov from \"studioul de baza\" studio (https://www.facebook.com/StudioulDeBaza)",
+					"id":94456020
 				}
 			],
 			
@@ -48,7 +57,6 @@ angular.module('soundmapApp')
 			onMarkerClick : function(marker, url){
 				console.log('markcer click', arguments);
 				location.url = url;
-				window.M = marker;
 			/*	widget.load(url, {
 					auto_play : true
 				});*/
@@ -88,6 +96,7 @@ angular.module('soundmapApp')
 				user.login(function(){
 					console.log('logged in');
 					$scope.$apply();
+					$rootScope.loggedUser = user.info;
 				});
 			},
 			logout : function(){

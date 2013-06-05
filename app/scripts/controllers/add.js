@@ -1,12 +1,24 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('MainCtrl', function ($scope, $timeout, $log) {
+	.controller('AddCtrl', function ($scope, $timeout, $log, user) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
+		user.getTracks();
+
+		var sound = {
+			title : '',
+			coords : {},
+			url : '',
+			description : '',
+			id : ''
+		};
+
+
+
 		
-		var map ={
+		var map = {
 		    position: {
 				coords: {
 					latitude : 47.15143535829049,
@@ -24,24 +36,21 @@ angular.module('soundmapApp')
 			zoomProperty: 8,
 			
 			/** list of markers to put in the map */
-			markersProperty: [
-				{
-					latitude : 47.15143535829049,
-					longitude : 27.59490966796875,
-					url : 'https://api.soundcloud.com/tracks/93249728'
-				}
-			],
+			markersProperty: [],
 			
 			// These 2 properties will be set when clicking on the map
 			clickedLatitudeProperty: null,	
 			clickedLongitudeProperty: null,
 			
 			eventsProperty: {
-			  click: function (mapModel, eventName, originalEventArgs) {	
-			    // 'this' is the directive's scope
-			    $log.log("user defined event on map directive with scope", this);
-			    $log.log("user defined event: " + eventName, mapModel, originalEventArgs);
-			  }
+				click: function (mapModel, eventName, originalEventArgs) {	
+					window.AA = arguments;
+					angular.extend($scope.sound.coords,{
+						latitude : originalEventArgs[0].latLng.lat(),
+						longitude : originalEventArgs[0].latLng.lng()
+					});
+					$scope.$apply();
+				}
 			},
 
 			onMarkerClick : function(marker, url){
@@ -55,47 +64,73 @@ angular.module('soundmapApp')
 			}
 		};
 
+		var searchTypeTimeout,
+			geocoder;
 
+		$scope.$watch('searchedLocation', function(){
+			$timeout.cancel(searchTypeTimeout);
+			searchTypeTimeout = $timeout(function(){
+				if(!$scope.searchedLocation)
+					return;
+ 				geocoder = geocoder || new google.maps.Geocoder();
+ 				geocoder.geocode({'address': $scope.searchedLocation}, function(results, status){
+				    if (status == google.maps.GeocoderStatus.OK) {
+				    	$scope.map.position.coords = {
+				    		latitude : results[0].geometry.location.lat(),
+				    		longitude : results[0].geometry.location.lng()
+				    	};
+				    	$scope.$apply();
+				    } else {
+				      alert('Geocode was not successful for the following reason: ' + status);
+				    }
+				});
+				
+			}, 500);
+		});
 
 
 /*
-		// initialize client with app credentials
-		SC.initialize({
-		  client_id: '9b9d346419c1d9931de96a21d481a033',
-		  redirect_uri: 'http://192.168.1.148:9000/'
-		});
+		$scope.$watch(function(){
 
-		// initiate auth popup
-		SC.connect(function() {
-			SC.get('/me', function(me) {
-				$scope.me = me;
-			});
 		});*/
 
 
-		var location = {
-			options : {
-//				callback : function(){},
-				auto_play : true
-			}
-		};
+		angular.extend($scope, {
+			map : map,
+			location : location,
+			login : function(){
+				user.login(function(){
+					console.log('logged in');
+					$scope.$apply();
+				});
+			},
+			logout : function(){
+				user.logout.apply(user, arguments);
+			},
+			logManage : function(){
+				return user.loggedIn?$scope.logout():$scope.login();
+			},
+			user : user,
 
-		$scope.map = map;
-		$scope.location = location;
+			selectTrack : function($event, track){
+				$event.preventDefault();
 
-		window.$scope = $scope;
+				angular.extend($scope.sound, {
+					url : track.permalink_url,
+					id : track.id,
+					description : track.description,
+					title : track.title
+				});
 
+			//	$scope.$apply();
+			},
 
+			saveSound : function(){
+				$log.log('sould save', $scope.sound);
+			},
 
+			sound : sound
+		});
 
-
-
-				// force cross-site scripting 
-		jQuery.support.cors = true;
-/*
-		var widgetIframe = document.getElementById('sc-widget'),
-		    widget       = SC.Widget(widgetIframe);
-
-		window.widget = widget;*/
-
+		window.scope = $scope;
 });

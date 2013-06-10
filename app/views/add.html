@@ -1,9 +1,10 @@
 <div class="hero-unit">
 	<h2>Add your sound to the map!</h2>
 	<ol>
-		<li>
+		<li ng-class={'no-results':!geocodeSuccess}>
 			<h4>search for the location of your sound : </h4>
 			<input type="text" ng-model="searchedLocation" class="expand-input">
+			<p class="text-error hide">We were unable to locate <em>{{searchedLocation}}</em> for you. Please search for another location or try again later.</p>
 		</li>
 		<li>
 			<h4>click on your exact location</h4>

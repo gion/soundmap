@@ -62,3 +62,12 @@ ol ul{
 	}
 }
 
+
+.no-results{
+	.text-error{
+		display : block;
+		em{
+			color : black;
+		}
+	}
+}

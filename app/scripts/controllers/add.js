@@ -9,7 +9,8 @@ angular.module('soundmapApp')
 
 		var sound = {
 			title : '',
-			coords : {},
+			latitude : 0,
+			longitude : 0,
 			url : '',
 			description : '',
 			id : ''
@@ -44,23 +45,12 @@ angular.module('soundmapApp')
 			
 			eventsProperty: {
 				click: function (mapModel, eventName, originalEventArgs) {	
-					window.AA = arguments;
-					angular.extend($scope.sound.coords,{
+					angular.extend($scope.sound,{
 						latitude : originalEventArgs[0].latLng.lat(),
 						longitude : originalEventArgs[0].latLng.lng()
 					});
 					$scope.$apply();
 				}
-			},
-
-			onMarkerClick : function(marker, url){
-				console.log('markcer click', arguments);
-				location.url = url;
-				window.M = marker;
-			/*	widget.load(url, {
-					auto_play : true
-				});*/
-				$scope.$apply();
 			}
 		};
 
@@ -68,10 +58,14 @@ angular.module('soundmapApp')
 			geocoder;
 
 		$scope.$watch('searchedLocation', function(){
+			$scope.geocodeSuccess = true;
+			
 			$timeout.cancel(searchTypeTimeout);
 			searchTypeTimeout = $timeout(function(){
 				if(!$scope.searchedLocation)
 					return;
+
+
  				geocoder = geocoder || new google.maps.Geocoder();
  				geocoder.geocode({'address': $scope.searchedLocation}, function(results, status){
 				    if (status == google.maps.GeocoderStatus.OK) {
@@ -79,10 +73,10 @@ angular.module('soundmapApp')
 				    		latitude : results[0].geometry.location.lat(),
 				    		longitude : results[0].geometry.location.lng()
 				    	};
-				    	$scope.$apply();
 				    } else {
-				      alert('Geocode was not successful for the following reason: ' + status);
+				    	$scope.geocodeSuccess = false;
 				    }
+			    	$scope.$apply();
 				});
 				
 			}, 500);

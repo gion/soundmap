@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('MainCtrl', function ($rootScope, $scope, $timeout, $log, user, $routeParams) {
+	.controller('MainCtrl', function ($rootScope, $scope, $timeout, $log, user, $routeParams, soundManager) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
 
-		var map ={
+		var map = {
 		    position: {
 				coords: {
 					latitude : 47.15143535829049,
@@ -24,7 +24,8 @@ angular.module('soundmapApp')
 			zoomProperty: 8,
 
 			/** list of markers to put in the map */
-			markersProperty: [
+/*      markersProperty: soundManager.query(),
+/*			markersProperty: [
 				{
 					"title":"10 - Fly me to the moon - The Gardeners live@RALET",
 					"latitude":47.15594427065246,
@@ -34,7 +35,7 @@ angular.module('soundmapApp')
 					"description":"bogdan & radu gradinariu (known as the gardeners) performing at  ralet (http://www.ralet.ro/) restaurant and recorded by vladimir ivanov from \"studioul de baza\" studio (https://www.facebook.com/StudioulDeBaza)",
 					"id":94456020
 				}
-			],
+			],*/
 
 			// These 2 properties will be set when clicking on the map
 			clickedLatitudeProperty: null,
@@ -57,7 +58,6 @@ angular.module('soundmapApp')
 				$scope.$apply();
 			}
 		};
-
 
 
 

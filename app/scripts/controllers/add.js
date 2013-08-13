@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('AddCtrl', function ($scope, $timeout, $log, user) {
+	.controller('AddCtrl', function ($scope, $timeout, $log, user, soundManager, $location) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
@@ -13,12 +13,13 @@ angular.module('soundmapApp')
 			longitude : 0,
 			url : '',
 			description : '',
-			id : ''
+			id : '',
+      user: 'gion'
 		};
 
 
 
-		
+
 		var map = {
 		    position: {
 				coords: {
@@ -26,25 +27,25 @@ angular.module('soundmapApp')
 					longitude : 27.59490966796875
 				}
 		    },
-			
+
 			/** the initial center of the map */
 			centerProperty: {
 				latitude : 47.15143535829049,
 				longitude : 27.59490966796875
 			},
-			
+
 			/** the initial zoom level of the map */
 			zoomProperty: 8,
-			
+
 			/** list of markers to put in the map */
 			markersProperty: [],
-			
+
 			// These 2 properties will be set when clicking on the map
-			clickedLatitudeProperty: null,	
+			clickedLatitudeProperty: null,
 			clickedLongitudeProperty: null,
-			
+
 			eventsProperty: {
-				click: function (mapModel, eventName, originalEventArgs) {	
+				click: function (mapModel, eventName, originalEventArgs) {
 					angular.extend($scope.sound,{
 						latitude : originalEventArgs[0].latLng.lat(),
 						longitude : originalEventArgs[0].latLng.lng()
@@ -59,7 +60,7 @@ angular.module('soundmapApp')
 
 		$scope.$watch('searchedLocation', function(){
 			$scope.geocodeSuccess = true;
-			
+
 			$timeout.cancel(searchTypeTimeout);
 			searchTypeTimeout = $timeout(function(){
 				if(!$scope.searchedLocation)
@@ -78,7 +79,7 @@ angular.module('soundmapApp')
 				    }
 			    	$scope.$apply();
 				});
-				
+
 			}, 500);
 		});
 
@@ -104,24 +105,28 @@ angular.module('soundmapApp')
 			logManage : function(){
 				return user.loggedIn?$scope.logout():$scope.login();
 			},
+
 			user : user,
 
 			selectTrack : function($event, track){
 				$event.preventDefault();
 
-				angular.extend($scope.sound, {
-					url : track.permalink_url,
-					id : track.id,
-					description : track.description,
-					title : track.title
-				});
+        angular.extend($scope.sound, {
+          permalink : track.permalink_url,
+          url: track.uri,
+          id : track.id,
+          description : track.description,
+          title : track.title,
+          userName: track.user.username,
+          userId: track.user_id
+        });
 
-			//	$scope.$apply();
 			},
 
 			saveSound : function(){
-				$log.log('should save', $scope.sound);
-				
+        soundManager.save($scope.sound, function(){
+          $location.path('/listen/' + $scope.sound.id);
+        });
 			},
 
 			sound : sound

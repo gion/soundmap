@@ -12,16 +12,20 @@ angular.module('soundmapApp', ['ngResource', 'google-maps'])
                 templateUrl: 'views/add.html',
                 controller: 'AddCtrl'
             })
+            .when('/listen/:songId', {
+                templateUrl: 'views/main.html',
+                controller: 'MainCtrl'
+            })
             .otherwise({
               redirectTo: '/'
             });
     })
-    .run( function($rootScope, $location) {
+    .run( function($rootScope, $location, $http) {
 
         // register listener to watch route changes
         $rootScope
             .$on( "$routeChangeStart", function(event, next, current) {
-                
+
                 // keep a reference to the current controller's name in the root scope
                 $rootScope.currentController = (next.$route || next.$$route).controller;
 

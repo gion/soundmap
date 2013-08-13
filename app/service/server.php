@@ -45,7 +45,6 @@ class Server {
         $resource = array_shift($paths);
         if ($resource == 'songs') {
             $id = array_shift($paths);
-
             if (empty($id)) {
                 $this->handle_base($method);
             } else {
@@ -59,8 +58,10 @@ class Server {
     }
 
     private function handle_base($method) {
+
         switch($method) {
         case 'GET':
+        case 'OPTIONS':
             $q = "SELECT * from " . $this->table;
             $this->data = $this->db->select($q);
             $this->result();
@@ -107,9 +108,15 @@ class Server {
             $this->result();
             return;
         }
-        $q = 'INSERT INTO ' . TABLE . ' (`id`, `title`, `description`, `url`, `permalink`, `latitude`, `longitude`, `user`)
-              VALUES ('. $id .', '. . $data['title'] .', '. $data['description'] .', '. $data['url'] .', '. $data['permalink'] .', '. $data['latitude'] . ', '. $data['longitude'] .', '. $data['user'] .');';
 
+        foreach ($data as $key => &$value) {
+          $value = mysql_real_escape_string($value);
+        }
+
+        $q = 'INSERT INTO ' . TABLE . ' (`id`, `title`, `description`, `url`, `permalink`, `latitude`, `longitude`, `user_name`, `user_id`)
+              VALUES ("'. $id .'", "'.  $data->title .'", "'. $data->description .'", "'. $data->url .'", "'. $data->permalink .'", "'. $data->latitude . '", "'. $data->longitude .'", "'. $data->userName .'", "'. $data->userId .'");';
+
+        echo $q;
         $this->db->insert($q);
         $this->data = $data;
         $this->result();

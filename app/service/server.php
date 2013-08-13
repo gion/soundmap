@@ -24,10 +24,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 class Server {
-    /* The array key works as id and is used in the URL
-       to identify the resource.
-    */
-    private $songs = array();
+
+    private $data = array();
 
     private $db = null;
     private $table = null;
@@ -44,10 +42,8 @@ class Server {
         $uri = $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
         $paths = explode('/', $this->paths($uri));
-        array_shift($paths); // Hack; get rid of initials empty string
         $resource = array_shift($paths);
-
-        if ($resource == 'clients') {
+        if ($resource == 'songs') {
             $id = array_shift($paths);
 
             if (empty($id)) {
@@ -66,7 +62,7 @@ class Server {
         switch($method) {
         case 'GET':
             $q = "SELECT * from " . $this->table;
-            $this->songs = $this->db->select($q);
+            $this->data = $this->db->select($q);
             $this->result();
             break;
         default:
@@ -98,7 +94,7 @@ class Server {
     }
 
     private function create_song($id){
-        if (isset($this->songs[$id])) {
+        if (isset($this->data[$id])) {
             header('HTTP/1.1 409 Conflict');
             return;
         }
@@ -111,13 +107,19 @@ class Server {
             $this->result();
             return;
         }
-        $this->songs[$id] = $data;
+        $q = 'INSERT INTO ' . TABLE . ' (`id`, `title`, `description`, `url`, `permalink`, `latitude`, `longitude`, `user`)
+              VALUES ('. $id .', '. . $data['title'] .', '. $data['description'] .', '. $data['url'] .', '. $data['permalink'] .', '. $data['latitude'] . ', '. $data['longitude'] .', '. $data['user'] .');';
+
+        $this->db->insert($q);
+        $this->data = $data;
         $this->result();
     }
 
     private function delete_song($id) {
-        if (isset($this->songs[$id])) {
-            unset($this->songs[$id]);
+        $q = 'DELETE from ' . TABLE . ' WHERE id = ' . $id;
+
+        if ($this->db->delete($q)) {
+            $this->data = [];
             $this->result();
         } else {
             header('HTTP/1.1 404 Not Found');
@@ -125,8 +127,12 @@ class Server {
     }
 
     private function display_song($id) {
-        if (array_key_exists($id, $this->songs)) {
-            echo json_encode($this->songs[$id]);
+
+        $q = 'SELECT * from ' . TABLE . ' WHERE id = ' . $id;
+        $this->data = $this->db->select($q);
+        if ($this->data && count($this->data) > 0) {
+            $this->data = $this->data[0];
+            $this->result(false);
         } else {
             header('HTTP/1.1 404 Not Found');
         }
@@ -134,7 +140,7 @@ class Server {
 
     private function paths($url) {
         $uri = parse_url($url);
-        return $uri['path'];
+        return trim(preg_replace('/.*service\.php\//', '', $uri['path']), '/');
     }
 
     /**
@@ -142,7 +148,7 @@ class Server {
      */
     private function result() {
         header('Content-type: application/json');
-        echo json_encode($this->songs);
+        echo json_encode($this->data);
     }
   }
 

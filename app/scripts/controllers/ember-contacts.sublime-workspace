@@ -1,0 +1,1257 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"conta",
+				"contactGroup"
+			],
+			[
+				"contact",
+				"contactsList"
+			],
+			[
+				"tr",
+				"transitionTo"
+			],
+			[
+				"valueB",
+				"valueBinding"
+			],
+			[
+				"render",
+				"renderTemplate"
+			],
+			[
+				"A",
+				"Application"
+			],
+			[
+				"co",
+				"contacts"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"hed",
+				"header	Tag"
+			],
+			[
+				"w",
+				"widget"
+			],
+			[
+				"mar",
+				"marker"
+			],
+			[
+				"local",
+				"localization"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"data",
+				"data-localization"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"dict",
+				"dictionary"
+			],
+			[
+				"eleme",
+				"elements"
+			],
+			[
+				"apply",
+				"applyLocaleDictionary"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"preR",
+				"preRenderCtx"
+			],
+			[
+				"clear",
+				"_clearAllTheCanvas"
+			],
+			[
+				"pre",
+				"preRenderCtx"
+			],
+			[
+				"a",
+				"acceleration"
+			],
+			[
+				"_clea",
+				"_clearVisibleCanvas"
+			],
+			[
+				"_clear",
+				"_clearAllTheCanvas"
+			],
+			[
+				"ori",
+				"originalPoints"
+			],
+			[
+				"nor",
+				"normalizePosition"
+			],
+			[
+				"translat",
+				"translationArgs"
+			],
+			[
+				"tran",
+				"translate"
+			],
+			[
+				"point",
+				"pointInRectangle"
+			],
+			[
+				"max",
+				"maxLevel"
+			],
+			[
+				"min",
+				"minLevel"
+			],
+			[
+				"bo",
+				"bonus"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"ne",
+				"drawNextGateDirections"
+			],
+			[
+				"saf",
+				"safeDraw"
+			],
+			[
+				"shoul",
+				"shouldClearCanvas"
+			],
+			[
+				"check",
+				"checkpoints"
+			],
+			[
+				"REQ",
+				"_REQUEST"
+			],
+			[
+				"com",
+				"completionBonus"
+			],
+			[
+				"level",
+				"levelQuantifiers"
+			],
+			[
+				"poin",
+				"points"
+			],
+			[
+				"get",
+				"getPanta"
+			],
+			[
+				"en",
+				"endP"
+			],
+			[
+				"maxY",
+				"maxYOffset"
+			],
+			[
+				"maxX",
+				"maxXOffset"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"tut",
+				"tutorialContainer"
+			],
+			[
+				"html",
+				"htmlContainer"
+			],
+			[
+				"pla",
+				"plane"
+			],
+			[
+				"es",
+				"else"
+			],
+			[
+				"res",
+				"resize"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"obsta",
+				"obstacleSelector"
+			],
+			[
+				"obs",
+				"obstacles"
+			],
+			[
+				"main",
+				"mainContainer"
+			],
+			[
+				"boo",
+				"bookmarklet"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"sty",
+				"style	Tag"
+			],
+			[
+				"_thr",
+				"_throttledGenerateScore"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"ba",
+				"backFaceClassName"
+			],
+			[
+				"wra",
+				"wrapperClass"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"ub",
+				"unbindEventHandlers"
+			],
+			[
+				"generate",
+				"generate"
+			],
+			[
+				"bl",
+				"inline-block"
+			],
+			[
+				"ge",
+				"generateScore"
+			],
+			[
+				"bon",
+				"bonusManager"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"img",
+				"imgWrapper"
+			],
+			[
+				"sc",
+				"scoreManager"
+			],
+			[
+				"can",
+				"canvas"
+			],
+			[
+				"sco",
+				"scoreCanvas"
+			],
+			[
+				"font",
+				"fontSize"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"onR",
+				"onRemove"
+			],
+			[
+				"_on",
+				"_onGenerate"
+			],
+			[
+				"fl",
+				"flyingScore"
+			],
+			[
+				"opac",
+				"opacity"
+			],
+			[
+				"up",
+				"updatePos"
+			],
+			[
+				"fi",
+				"fillStyle"
+			],
+			[
+				"stats",
+				"statsContainer"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"bonu",
+				"bonuses"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"remo",
+				"removeBonus"
+			],
+			[
+				"init",
+				"initBonusManager"
+			],
+			[
+				"shou",
+				"shouldClearCanvas"
+			],
+			[
+				"_ch",
+				"_changed"
+			],
+			[
+				"degree",
+				"degreePace"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"coll",
+				"collidesWithCone"
+			],
+			[
+				"cone",
+				"coneRadius"
+			],
+			[
+				"plane",
+				"planeRadius"
+			],
+			[
+				"fr",
+				"fromDownToUp"
+			],
+			[
+				"on",
+				"onChange"
+			],
+			[
+				"req",
+				"requestAnimationFrame"
+			],
+			[
+				"ma",
+				"maxRotation"
+			],
+			[
+				"arg",
+				"arguments"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"sta",
+				"statsContainer"
+			],
+			[
+				"for",
+				"foregroundCanvas"
+			],
+			[
+				"_class",
+				"_classNames"
+			],
+			[
+				"appl",
+				"applyTransforms"
+			],
+			[
+				"app",
+				"apply"
+			],
+			[
+				"trna",
+				"transform"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"rota",
+				"rotateX"
+			],
+			[
+				"pl",
+				"planes"
+			],
+			[
+				"st",
+				"stopped"
+			],
+			[
+				"rotatey",
+				"rotateY2"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"0x",
+				"0xff00dd"
+			],
+			[
+				"lin",
+				"lineStyle"
+			],
+			[
+				"ad",
+				"addChild"
+			],
+			[
+				"dra",
+				"drawBezier"
+			],
+			[
+				"dist",
+				"distBetween2Points"
+			],
+			[
+				"sa",
+				"stageWidth"
+			],
+			[
+				"b",
+				"block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/ember-contacts/index.html",
+			"settings":
+			{
+				"buffer_size": 4695,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/ember-contacts/app.js",
+			"settings":
+			{
+				"buffer_size": 4585,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var App = Ember.Application.create();\n\n// routers\n// routes : / | view/x | edit/x\n\nApp.Router.map(function () {\n	this.resource('add', {path: '/'}, function(){\n		this.resource('view', {path: 'view/:id'}, function(){\n			this.route('view');\n		});\n\n		this.resource('edit', {path: 'edit/:id'}, function(){\n			this.route('edit');\n		});\n\n		this.route('add');\n\n	});\n\n/*	// when navigating to one of the following routes (view/edit/add),\n	// make sure that their corresponding templates are rendered\n	// as the \"outlet\" into the application template  \n	this.route('add');*/\n\n});\n\nApp.ApplicationRoute = Ember.Route.extend({\n    renderTemplate: function() {\n        // Render default outlet   \n        this.render();\n    },\n\n	setupController: function(controller) {\n		controller.set('contacts', App.Contact.find());\n	},\n\n    model: function(){\n    	return App.Contact.find();\n    }\n});\n\n// redirect the default index route to the \"add\" route\nApp.IndexRoute = Ember.Route.extend({\n	redirect: function(){\n		this.transitionTo('add');\n	}\n});\n\nApp.AddRoute = Ember.Route.extend({\n	model: function(){\n		return App.Contact.createRecord();\n	},\n\n	renderTemplate: function(){\n		this.render('add', {\n			into: 'application'\n		});\n	},\n\n	serialize: function(model){\n		return model;\n	}\n});\n\nApp.ViewRoute = Ember.Route.extend({\n	model: function(params){\n		return App.Contact.find(params.id);\n	},\n	renderTemplate: function(){\n		this.render('view', {\n			into: 'application' \n		});\n	},\n	serialize: function(model){\n		return model;\n	}\n});\n\nApp.EditRoute = Ember.Route.extend({\n	model: function(params){\n		return App.Contact.find(params.id);\n	},\n\n	renderTemplate: function(){\n		this.render('edit', {\n			into: 'application'\n		});\n	},\n\n	serialize: function(model){\n		return model;\n	}\n});\n\n// store \n\nApp.Store = DS.Store.extend({\n	revision: 12,\n//	adapter: 'DS.FixtureAdapter'\n	adapter: DS.LSAdapter.create({\n	  namespace: 'ember-contacts'\n	})\n});\n// models\nApp.Contact = DS.Model.extend({\n	name: DS.attr('string'),\n	email: DS.attr('string'),\n	tel: DS.attr('number'),\n	isCompleted: DS.attr('boolean'),\n\n\n	contactDidChange: function () {\n		Ember.run.once(this, function () {\n			this.get('store').commit();\n		});\n	}.observes('isCompleted', 'name')\n});\n\n\nApp.Contact.FIXTURES = [\n	{\n		id: 1,\n		name: 'joe beef',\n		email: 'joe@beef.com',\n		tel: 1234567890,\n		isCompleted: true\n	},\n	{\n		id: 2,\n		name: 'john snow',\n		email: 'snow@winterfell.com',\n		tel: 1231231321,\n		isCompleted: false\n	}\n];\n\n\nApp.EditController = App.AddController = Ember.ObjectController.extend({\n\n	nameError: function(){\n		var name = this.get('name');\n		return !name || /[-_0-9]/.test(name);\n	}.property('name'),\n\n	emailError: function(){\n		var email = this.get('email');\n		return !email || !/^\\S+@\\S+\\.\\S+$/.test(email);\n	}.property('email'),\n\n	telError: function(){\n		var tel = this.get('tel');\n		return !tel || !/^\\d{10,15}$/.test(tel);\n	}.property('tel'),\n\n	anyError : function(){\n		return this.get('nameError') || this.get('emailError') || this.get('telError');\n	}.property('nameError', 'emailError', 'telError'),\n\n	save : function(){\n		if(this.get('anyError'))\n			return;\n\n		// save the changes\n		this.get('store').commit();\n\n		this.transitionToRoute('view', this.get('model'));\n	}\n});\n\n\n\n\nApp.ContactsController = Ember.ArrayController.extend({\n	\n});\n\n\nApp.ApplicationController = Ember.ObjectController.extend({\n\n	// the query from the input\n	query : '',\n\n	// the array holding the search results\n	searchResults : function(){\n		\n		var r = RegExp(this.get('query'));\n\n		return this.get('contacts').filter(function(contact){\n			return r.test(contact.get('name'));\n		});\n	}.property('query', 'contacts.@each.name'),\n\n	// specify that our content is a \"ContactsController\" instance\n	contacts: App.ContactsController.create(),\n	\n	contactsList: App.ContactsController.create(),\n\n	updateContactsList : function(){\n		console.log('updateContactList');\n		var list = {},\n			contacts = this.get('contacts'),\n			listKey,\n			arr = [];\n\n		contacts.every(function(el, i){\n			listKey = el.get('name').substring(0, 1).toLowerCase();\n			\n			if(!list[listKey]){\n				arr.push({\n					key: listKey, \n					list: list[listKey] = []\n				});\n			}\n\n			list[listKey].push(el);\n		});\n\n		this.contactsList.set('content', arr);\n	}.observes('contacts.@each')\n});",
+			"settings":
+			{
+				"buffer_size": 4272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/ember-contacts/css/main.css",
+			"settings":
+			{
+				"buffer_size": 13600,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<script type=\"text/x-handlebars\" data-template-name=\"edit\">\n  <form name=\"myForm\" class=\"formdesign\" {{action save on=\"submit\"}}>\n    <div {{bindAttr class=nameError:error}}>\n      {{view Ember.TextField type=\"text\" placeholder=\"Name\" valueBinding=\"name\"}}\n      <span class=\"errorMsg\">\n        What good it will do without entering your contact`s name?\n      </span>\n    </div>\n    <div {{bindAttr class=telError:error}}>\n      {{view Ember.TextField type=\"text\" placeholder=\"Phone\" valueBinding=\"tel\"}}\n      <span class=\"errorMsg\">\n        It is supposed to be a number. Right?\n      </span>\n    </div>\n    <div {{bindAttr class=emailError:error}}>\n      {{view Ember.TextField type=\"text\" placeholder=\"Email\" valueBinding=\"email\"}}\n      <span class=\"errorMsg\">\n        From when they started to accept invalid emails?\n      </span>\n    </div>\n    <button class=\"btn btn-left\" {{bindAttr disabled=anyError}}>\n      Done\n    </button>\n    <button class=\"btn btn-danger\">\n      Delete\n    </button>\n    </div>\n  </form>\n</script>",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 285.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"git commit ",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"git d",
+				"Git: Diff All"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/ember-contacts/ap.js",
+		"/var/www/ember-contacts/app.js-old",
+		"/var/www/soundmap/app/scripts/vendor/angular-google-maps.js",
+		"/var/www/test/ngUpload/examples/nodejs/node_modules/express/client.js",
+		"/var/www/test/ngUpload/examples/nodejs/node_modules/express/index.js",
+		"/var/www/soundmap/app/styles/soundcloud.css",
+		"/var/www/planes/app/scripts/config.js",
+		"/var/www/planes/app/scripts/dom.js",
+		"/var/www/planes/app/scripts/engine.js",
+		"/var/www/planes/app/api.php",
+		"/var/www/planes/test/app-mine.js",
+		"/var/www/planes/app/scripts/app.js",
+		"/var/www/planes/app/scripts/util.js",
+		"/var/www/planes/app/styles/planes.css",
+		"/var/www/planes/app/styles/planes.scss",
+		"/run/user/gion/gvfs/ftp:host=projects-directory.com,user=bogdang/public_html/wp/wp-content/themes/twentytwelve/taxonomy-preparation_times.php ",
+		"/run/user/gion/gvfs/ftp:host=projects-directory.com,user=bogdang/public_html/wp/wp-content/themes/twentytwelve/functions.php",
+		"/run/user/gion/gvfs/ftp:host=projects-directory.com,user=bogdang/public_html/wp/wp-content/themes/twentyeleven/functions.php",
+		"/run/user/gion/gvfs/ftp:host=projects-directory.com,user=bogdang/public_html/wp/wp-config.php",
+		"/var/www/planes/app/scripts/vendor/json.js",
+		"/var/www/planes/dist/scripts/vendor/json.js",
+		"/var/www/planes/app/index.html",
+		"/var/www/planes/app/inject.php",
+		"/var/www/planes/app/index.php",
+		"/var/www/planes/app/.htaccess",
+		"/var/www/planes/Gruntfile.js",
+		"/var/www/planes/app/index.php~HEAD",
+		"/var/www/planes/app/scripts/stats.js",
+		"/var/www/planes/app/scripts/vendor/canvas.curve.js",
+		"/var/www/test/Canvas_SmoothCurve_1.2/canvas_curves_demo.html",
+		"/var/www/test/Canvas_SmoothCurve_1.2/canvas.curve.min.js",
+		"/var/www/planes/app/styles/style.php",
+		"/var/www/planes/app/scripts/vendor/jquery.min.js",
+		"/var/www/planes/app/scripts/vendor/lodash.min.js",
+		"/var/www/planes/app/scripts/vendor/yepnope.1.5.4-min.js",
+		"/var/www/planes/app/styles/main.scss",
+		"/var/www/planes/app/styles/animations.scss",
+		"/var/www/planes/app/styles/variables.scss",
+		"/var/www/planes/app/style.php",
+		"/var/www/planes/app/scripts/vendor/buzz.js",
+		"/var/www/planes/component.json",
+		"/var/www/planes/dist/styles/planes.css",
+		"/var/www/planes/dist/style.php",
+		"/var/www/planes/app/scripts/main.js",
+		"/var/www/planes/app/styles/app.scss",
+		"/home/gion/Downloads/main.css",
+		"/var/www/planes/3d/style.php",
+		"/var/www/planes/3d/app.js",
+		"/var/tmp/index.html",
+		"/var/www/planes/3d/app.css",
+		"/var/www/planes/3d/app.css.bk",
+		"/home/gion/Desktop/Link to 2day.txt",
+		"/var/www/planes/3d/index.html",
+		"/var/www/planes/.gitattributes",
+		"/var/www/test/3d/planes/bookmarklet.js.php",
+		"/var/www/planes/.tmp/index.html",
+		"/var/www/test/3d/planes/app.css",
+		"/var/www/test/3d/planes/app2.js",
+		"/var/www/planes/dist/scripts/planes.js",
+		"/media/windows/wamp/www/projects/beetleworx/js/game.js",
+		"/var/www/planes/dist/styles/main.css",
+		"/var/www/planes/app/components/jquery/jquery.js",
+		"/var/www/planes/dist/index2.html",
+		"/var/www/planes/.tmp/styles/planes.css",
+		"/var/www/planes/.tmp/styles/app.css",
+		"/var/www/test/3d/planes/index.html",
+		"/var/www/test/3d/planes/app.js",
+		"/media/windows/wamp/www/projects/beetleworx/js/app.js",
+		"/home/gion/.config/sublime-text-3/Packages/Web Inspector/Default (Linux).sublime-keymap",
+		"/home/gion/.config/sublime-text-3/Packages/Web Inspector/swi.sublime-settings",
+		"/home/gion/Downloads/favicon.ico",
+		"/var/www/planes/app/favicon.ico",
+		"/var/www/test/3d/planes/app2.css",
+		"/var/www/test/3d/planes/style.php",
+		"/var/www/test/3d/planes/bookmarklet.js",
+		"/home/gion/Downloads/CSS custom filters + 3D transforms.html",
+		"/var/www/test/3d/planes/bookmaklet-backup.js",
+		"/var/www/racemark/dist/.htaccess",
+		"/var/www/racemark/app/index.html",
+		"/var/www/racemark/app/scripts/main.js",
+		"/var/www/racemark/Gruntfile.js",
+		"/var/www/racemark/dist/scripts/main.js",
+		"/var/www/racemark/app/.htaccess",
+		"/var/www/racemark/dist/index.html",
+		"/var/www/racemark/app/scripts/raf.js",
+		"/media/windows/wamp/www/projects/xivic-portfolio/Development/sources/coin-string-demo/script/js/main.js",
+		"/var/www/racemark/app/styles/main.scss",
+		"/var/www/front-end-group/test/tests.js",
+		"/var/www/front-end-group/test/index.html",
+		"/var/www/test/reveal.js/index.html",
+		"/var/www/test/reveal.js/README.md",
+		"/var/www/test/reveal.js/plugin/highlight/highlight.js",
+		"/var/www/front-end-group/tests.js",
+		"/var/www/front-end-group/tests.html",
+		"/var/www/movie-maker/app/images/ignore/loading.gif",
+		"/home/gion/Downloads/loading.gif",
+		"/var/www/movie-maker/app/scripts/vendor/es5-shim.min.js",
+		"/var/www/movie-maker/app/data/demo.json",
+		"/var/www/movie-maker/app/styles/loading.scss",
+		"/var/www/movie-maker/app/scripts/services/timeline.js",
+		"/var/www/movie-maker/app/scripts/app.js",
+		"/var/www/hockey/app/scripts/services/config.js",
+		"/var/www/hockey/Gruntfile.js",
+		"/var/www/hockey/app/styles/main.scss",
+		"/var/www/test/movie-maker/Gruntfile.js",
+		"/var/www/hockey/app/index.html",
+		"/var/www/hockey/server/server.js",
+		"/var/www/hockey/app/scripts/app.js",
+		"/var/www/hockey/app/scripts/controllers/main.js",
+		"/var/www/hockey/app/scripts/controllers/game.js",
+		"/var/www/movie-maker/app/styles/animation_mixins.scss",
+		"/var/www/test/movie-maker/app/scripts/app.js",
+		"/var/www/hockey/app/views/game.html",
+		"/var/www/hockey/app/views/main.html",
+		"/var/www/hockey/app/scripts/services/socket.js",
+		"/var/www/hockey/app/scripts/services/animationFrame.js",
+		"/var/www/movie-maker/Gruntfile.js",
+		"/var/www/movie-maker/testacular.conf.js",
+		"/var/www/test/movie-maker/app/styles/main.scss",
+		"/var/www/test/movie-maker/app/components/angular-strap/dist/angular-strap.min.js",
+		"/var/www/test/movie-maker/app/data/demo.json",
+		"/var/www/test/movie-maker/app/scripts/directives/ui.js",
+		"/var/www/test/movie-maker/app/index.html",
+		"/var/www/test/movie-maker/app/views/main.html",
+		"/var/www/test/movie-maker/app/scripts/services/config.js",
+		"/var/www/test/movie-maker/app/scripts/services/util.js",
+		"/var/www/test/movie-maker/app/components/angular-ui/modules/directives/jq/jq.js",
+		"/var/www/test/movie-maker/app/scripts/controllers/main.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open files>",
+			"\\n",
+			"\\n\\s",
+			"\\r\\n\\s",
+			"/var/www/hockey/app/scripts/services"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"updateContactList",
+			"content",
+			"updateContactsList",
+			"ifCond",
+			"ContactsController",
+			"content",
+			"create",
+			"save",
+			"edit",
+			"currentModel",
+			"save",
+			"action",
+			"value",
+			"verifyForm",
+			"value",
+			"valueBinding",
+			"bindings",
+			"attributeBindings",
+			"animation",
+			"contact_id",
+			"ApplicationRoute",
+			"back",
+			"view",
+			"User",
+			"url(\"/",
+			"email",
+			"url('/",
+			"src=\"/",
+			"href=\"/",
+			"0.5s",
+			"1s",
+			"color",
+			"0.5",
+			"1s",
+			"height",
+			"90deg",
+			"ng-src",
+			"ngSrc",
+			"widget",
+			"addMarker",
+			"onMarkerClick",
+			"markers",
+			"MapModel",
+			"user",
+			"$log",
+			"defined",
+			"infoWindowContent",
+			"click",
+			"MapModel",
+			"PrivateMapModel",
+			"addMarker",
+			"infoWindowContent",
+			"click",
+			"local",
+			"hostname",
+			"tuto",
+			"tutori",
+			"console",
+			"generateScore",
+			"'storm'",
+			" :",
+			"			'storm' ",
+			"'storm'",
+			"generateBonus",
+			"translate",
+			"key",
+			"localization",
+			" {'data-localization",
+			"{'data-localization",
+			"updateStat",
+			"score",
+			"statsContainer",
+			"localizationContainer",
+			"pause",
+			"htmlOverlayContainer",
+			"html-overlay-container",
+			"currentDictionary",
+			"getLocaleDictionary",
+			"targetedSelector",
+			"className",
+			"generate",
+			"all",
+			"congra",
+			"paused",
+			"gba(0,0,0",
+			".5)",
+			"0.5)",
+			"img",
+			"<<",
+			"margin",
+			"margin : 100",
+			"<<",
+			"//",
+			"htt",
+			">>",
+			"<<",
+			"cong",
+			"stats",
+			"height",
+			"important",
+			"all 2s",
+			"transition",
+			"image",
+			"!important",
+			" !important;\n",
+			"!important;",
+			"corec",
+			"drawHelperLines",
+			"displayG",
+			"clear :",
+			"clear",
+			"this.ctx",
+			"drawLineBetweenCones",
+			"prere",
+			"preRender",
+			"clear",
+			"prerender",
+			"clearC",
+			"drawPreRenderedData",
+			"ctx !=",
+			"preRender",
+			"redrawAll",
+			"safeDraw",
+			"resize",
+			"draw(",
+			"_draw(",
+			"this.ctx"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Reg",
+			"url(\"../",
+			"url('../",
+			"src=\"",
+			"href=\"",
+			"    ",
+			"Preparation Time",
+			"preparation time",
+			"['super']",
+			"'super':",
+			"'constructor':",
+			"'constructor' :",
+			"'super' :",
+			"this.getNormalizedPosition()",
+			"planeAcceleration / app.config.levelConfig.planeSteeringAccelerationReduction",
+			"app.config.levelConfig.planeMinSpeed",
+			"app.config.levelConfig.planeRotationPace",
+			"app.config.levelConfig.planeMaxRotation",
+			"app.config.levelConfig.planeAcceleration",
+			"app.config.levelConfig.planeMaxSpeed",
+			"\"",
+			"<a target=\"_blank\" href",
+			"'#p-",
+			"p-",
+			"\"p-",
+			"\"-",
+			"id=\"--",
+			"#--",
+			"$('#--",
+			"\\n;",
+			"planes.js",
+			"app.util.extend",
+			"onReady",
+			"host + \"",
+			"http://localhost/racemark/app/images/",
+			"\\n",
+			"    ",
+			"am modificat asta ! - audio/mpeg",
+			"!util.isIpad() ?",
+			"@include keyframe",
+			"51px",
+			"0px",
+			":0",
+			"$1",
+			"0",
+			"\\t",
+			"    ",
+			"ItemFactory",
+			"@include",
+			"createVideoE",
+			"mainTimeline",
+			"createVideoElement",
+			"    ",
+			"",
+			"include_once(\"templates/",
+			"<?php }",
+			"swipe-slider",
+			"app.clickEvent",
+			"sublime.desktop"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/ember-contacts/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3327,
+								3327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1659.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/ember-contacts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3408,
+								3408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2676.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/ember-contacts/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4817,
+								4817
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4052.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1031,
+								1031
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.645,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 256.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"project": "ember-contacts.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"pla",
+				"~/Desktop/planes.sublime-project"
+			],
+			[
+				"afte",
+				"/media/windows/Users/gion/Desktop/after-earth.sublime-project"
+			],
+			[
+				"after",
+				"/media/windows/Users/gion/Desktop/after-earth.sublime-project"
+			],
+			[
+				"pl",
+				"~/Desktop/planes.sublime-project"
+			],
+			[
+				"",
+				"/media/windows/Users/gion/Desktop/after-earth.sublime-project"
+			],
+			[
+				"sco",
+				"~/Desktop/scoreace.sublime-project"
+			],
+			[
+				"sc",
+				"~/Desktop/scoreace.sublime-project"
+			],
+			[
+				"w",
+				"~/Desktop/www.sublime-project"
+			],
+			[
+				"ww",
+				"~/Desktop/www.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

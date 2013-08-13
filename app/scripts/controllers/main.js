@@ -5,7 +5,7 @@ angular.module('soundmapApp')
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
-		
+
 		var map ={
 		    position: {
 				coords: {
@@ -13,41 +13,35 @@ angular.module('soundmapApp')
 					longitude : 27.59490966796875
 				}
 		    },
-			
+
 			/** the initial center of the map */
 			centerProperty: {
 				latitude : 47.15143535829049,
 				longitude : 27.59490966796875
 			},
-			
+
 			/** the initial zoom level of the map */
 			zoomProperty: 8,
-			
+
 			/** list of markers to put in the map */
 			markersProperty: [
-/*				{
-					latitude : 47.15143535829049,
-					longitude : 27.59490966796875,
-			//		url : 'https://api.soundcloud.com/tracks/93249728'
-					url : 'https://api.soundcloud.com/tracks/94818362'
-				},*/
 				{
 					"title":"10 - Fly me to the moon - The Gardeners live@RALET",
 					"latitude":47.15594427065246,
 					"longitude":27.579835653305054,
 					"permalink":"http://soundcloud.com/bogdan-gradinariu/10-fly-me-to-the-moon-the",
-					"url":"https://api.soundcloud.com/tracks/94456020",
+					"url":"//api.soundcloud.com/tracks/94456020",
 					"description":"bogdan & radu gradinariu (known as the gardeners) performing at  ralet (http://www.ralet.ro/) restaurant and recorded by vladimir ivanov from \"studioul de baza\" studio (https://www.facebook.com/StudioulDeBaza)",
 					"id":94456020
 				}
 			],
-			
+
 			// These 2 properties will be set when clicking on the map
-			clickedLatitudeProperty: null,	
+			clickedLatitudeProperty: null,
 			clickedLongitudeProperty: null,
-			
+
 			eventsProperty: {
-			  click: function (mapModel, eventName, originalEventArgs) {	
+			  click: function (mapModel, eventName, originalEventArgs) {
 			    // 'this' is the directive's scope
 			    $log.log("user defined event on map directive with scope", this);
 			    $log.log("user defined event: " + eventName, mapModel, originalEventArgs);
@@ -109,5 +103,5 @@ angular.module('soundmapApp')
 		});
 
 		window.scope = $scope;
-		
+
 });

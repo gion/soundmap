@@ -120,7 +120,8 @@ angular.module('soundmapApp')
 			},
 
 			saveSound : function(){
-				$log.log('sould save', $scope.sound);
+				$log.log('should save', $scope.sound);
+				
 			},
 
 			sound : sound

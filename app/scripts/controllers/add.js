@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('AddCtrl', function ($scope, $timeout, $log, user, soundManager, $location) {
+	.controller('AddCtrl', function ($scope, $timeout, $log, user, songManager, $location) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
@@ -124,7 +124,7 @@ angular.module('soundmapApp')
 			},
 
 			saveSound : function(){
-        soundManager.save($scope.sound, function(){
+        songManager.save($scope.sound, function(){
           $location.path('/listen/' + $scope.sound.id);
         });
 			},

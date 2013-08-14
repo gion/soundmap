@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('soundmapApp')
-	.controller('MainCtrl', function ($rootScope, $scope, $timeout, $log, user, $routeParams, soundManager) {
+	.controller('MainCtrl', function ($rootScope, $scope, $timeout, $log, user, $routeParams, songManager, $location) {
 	    // Enable the new Google Maps visuals until it gets enabled by default.
 	    // See http://googlegeodevelopers.blogspot.ca/2013/05/a-fresh-new-look-for-maps-api-for-all.html
 	    google.maps.visualRefresh = true;
@@ -24,7 +24,7 @@ angular.module('soundmapApp')
 			zoomProperty: 8,
 
 			/** list of markers to put in the map */
-/*      markersProperty: soundManager.query(),
+      markersProperty: songManager.query(),
 /*			markersProperty: [
 				{
 					"title":"10 - Fly me to the moon - The Gardeners live@RALET",
@@ -49,31 +49,13 @@ angular.module('soundmapApp')
 			  }
 			},
 
-			onMarkerClick : function(marker, url){
-				console.log('markcer click', arguments);
-				location.url = url;
-			/*	widget.load(url, {
-					auto_play : true
-				});*/
+			onMarkerClick : function(marker, songData){
+				$location.search({songId: marker.songData.id});
+        //location.url = url;
 				$scope.$apply();
 			}
 		};
 
-
-
-/*
-		// initialize client with app credentials
-		SC.initialize({
-		  client_id: '9b9d346419c1d9931de96a21d481a033',
-		  redirect_uri: 'http://192.168.1.148:9000/'
-		});
-
-		// initiate auth popup
-		SC.connect(function() {
-			SC.get('/me', function(me) {
-				$scope.me = me;
-			});
-		});*/
 
 
 		var location = {
@@ -85,7 +67,9 @@ angular.module('soundmapApp')
 
 		angular.extend($scope, {
 			map : map,
+
 			location : location,
+
 			login : function(){
 				user.login(function(){
 					console.log('logged in');
@@ -93,14 +77,31 @@ angular.module('soundmapApp')
 					$rootScope.loggedUser = user.info;
 				});
 			},
+
 			logout : function(){
 				user.logout.apply(user, arguments);
 			},
+
 			logManage : function(){
 				return user.loggedIn?$scope.logout():$scope.login();
 			},
-			user : user
+
+			user : user,
+
+      selectSong: function(id){
+        $scope.selectedSong = songManager.get({songId:id}, function(){
+          $scope.location.url = angular.isObject($scope.selectedSong) ? $scope.selectedSong.url : '';
+        });
+      },
+
+      selectedSong: null
 		});
+
+
+    $scope.$on('$routeUpdate', function(){
+      $scope.selectSong($location.search().songId);
+    });
+
 
 		window.scope = $scope;
 

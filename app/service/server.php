@@ -116,7 +116,6 @@ class Server {
         $q = 'INSERT INTO ' . TABLE . ' (`id`, `title`, `description`, `url`, `permalink`, `latitude`, `longitude`, `user_name`, `user_id`)
               VALUES ("'. $id .'", "'.  $data->title .'", "'. $data->description .'", "'. $data->url .'", "'. $data->permalink .'", "'. $data->latitude . '", "'. $data->longitude .'", "'. $data->userName .'", "'. $data->userId .'");';
 
-        echo $q;
         $this->db->insert($q);
         $this->data = $data;
         $this->result();

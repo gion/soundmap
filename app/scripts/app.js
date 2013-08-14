@@ -12,10 +12,6 @@ angular.module('soundmapApp', ['ngResource', 'google-maps'])
                 templateUrl: 'views/add.html',
                 controller: 'AddCtrl'
             })
-            .when('/listen/:songId', {
-                templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
-            })
             .otherwise({
               redirectTo: '/'
             });

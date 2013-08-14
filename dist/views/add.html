@@ -1,0 +1,39 @@
+<div class="hero-unit">
+	<h2>Add your sound to the map!</h2>
+	<ol>
+		<li ng-class="{'no-results':!geocodeSuccess}">
+			<h4>search for the location of your sound : </h4>
+			<input type="text" ng-model="searchedLocation" class="expand-input">
+			<p class="text-error hide">We were unable to locate <em>{{searchedLocation}}</em> for you. Please search for another location or try again later.</p>
+		</li>
+		<li>
+			<h4>click on your exact location</h4>
+			<section class="google-map" center="map.position.coords" zoom="map.zoomProperty" markers="map.markersProperty" latitude="map.clickedLatitudeProperty" longitude="map.clickedLongitudeProperty" mark-click="true" draggable="true" fit="true" events="map.eventsProperty" on-marker-click="map.onMarkerClick" style="height: 400px; width: 100%">
+			</section>
+		</li>
+		<li>
+			<h4>select your sound from your soundcloud account</h4>
+			<ul>
+				<li ng-repeat="track in user.trackList" ng-class="{selected:track.id == sound.id}">
+					<a href="{{track.permalink_url}}" target="_blank" title="{{track.title}}" ng-click="selectTrack($event,track)" class="roll">
+						<span data-title="{{track.title}}">
+							{{track.title}}
+						</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<h4>edit title</h4>
+			<input type="text" ng-model="sound.title" class="expand-input">
+		</li>
+		<li>
+			<h4>edit description</h4>
+			<textarea ng-model="sound.description" class="expand-input"></textarea>
+		</li>
+		<li>
+			<h4>you're good to go</h4>
+			<button ng-click="saveSound()">save your sound!</button>
+		</li>
+	</ol>
+</div>
